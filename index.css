@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 20rem;
+background-image: url(assets/header-background.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+h1{
+ padding: 6rem 0 5rem 3rem;
+ width: 20rem;
+ color: #FFD600;
+ font-size: 4rem;
+}
+h2{
+  
+   font-size: 2rem;
+    color: #FFD600;
+}
+/* MAIN BODY */
+main{
+
+    width: 100%;
+    height: 60rem;
+background-color: rgb(66, 66,66);
+display: flex;
+justify-content: space-around;
+}
+/* TEGET BOTH FRAMES */
+
+
+.frame{
+position: relative;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+width: 30rem;
+height: 40rem;
+margin-left: 4rem;
+background-color: rgb(196 196 196);
+top: -3rem;
+}
+
+.upper-both{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+width: 100%;
+height: 12%;
+}
+
+
+/* CHARACTER ARTICLE */
+.characters{
+    margin-left: 10%;
+    z-index: 5;
+}
+.upper{
+    /* Relative for box shadow */
+    position: relative;
+    background-color: rgb(82 85 86);
+    box-shadow: 0px 3px 4px 0px #625f5f; 
+}
+
+
+
+ul{
+height: 78%;
+}
+.name-container button{
+box-sizing: border-box;
+padding: 1rem 1.5rem;
+font-size: 1.2rem;
+}
+.name-container button:nth-child(2n-2){
+background-color: rgb(225 223 223);
+color: rgba(68, 68, 68, 0.7);
+
+}
+.name-container button:nth-child(2n-1){
+    background-color: rgba(142 142 142);   
+    color: rgba(255, 255, 255, 0.85);
+    } 
+    
+.name-container button:hover{
+    background-color: rgba(68 68 68);
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: all 0.3s ease-in-out;
+     }
+    
+    .name-container button:hover::after {
+    content: " >";
+    }
+
+     .name-container button{
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        height: 10%;
+    }
+    
+    .name-container{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+.lower{
+   position: relative;
+    width: 100%;
+    height: 10%;
+background-color: rgb(196 196 196);
+display: flex;
+
+}
+
+.lower-swap-container{
+    
+    font-size: 1.9rem;
+    
+    height: 2rem;
+    
+    bottom: 3rem;
+display: flex;
+position: absolute;
+bottom: 0.5rem;
+left: 50%;
+transform: translate(-50%);
+}
+
+.lower-swap-container p{
+    margin: 0rem 0.4rem;
+}
+
+button{
+    margin: 0rem 1rem;
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border: none; 
+    cursor: pointer;
+}
+.left-btn{   
+    background-image: url(img/left-arrow.png); 
+}
+.right-btn{   
+    background-image: url(img/right-arrow.png); 
+}
+
+
+.load-containe2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* DETAILS ARTICLE */
+
+.details{
+    margin-right: 10%;
+}
+
+.upper2{
+background-color: #748687;
+
+}
+
+.mid{
+    font-size: 1.5rem;
+    width: 100%;
+    height: 38%;
+background-color: rgb(196 196 196);
+box-sizing: border-box;
+padding: 1rem;
+}
+
+
+nav {
+    width: 100%;
+    height: 6%;
+    display: flex;
+    }
+    
+    nav button {
+        font-size: 0.6rem;
+        margin: 0 0 0 1rem;
+        color: rgb(181 169 103);
+        background-color: white;
+        width: 18%;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0rem 0.5rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    
+    /* nav button:target {
+    color: rgb(255 214 0);
+    background-color: rgb(142 142 142);
+    } */
+    #active {
+        color: rgb(255 214 0);
+        background-color: rgb(142 142 142);
+        }
+
+.lower2{
+overflow-y: auto;
+font-size: 1.5rem;
+box-sizing: border-box;
+padding: 0.5rem 1rem;
+width: 100%;
+height: 44%;
+background-color: rgb(142 142 142);
+color: rgba(255, 255, 255, 0.85);
+}
+
+span{
+    display: block;
+    
+    margin-top: 5rem;
+  
+}
+
+.load-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading{
+    background-image: url(img/loading2.png); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 50px;
+    height: 50px;
+    animation: loadspin 2.5s linear infinite;
+}
+
+@keyframes loadspin {
+    from {
+     transform: rotate(0deg);
+    }
+  
+    to {
+    transform: rotate(360deg);
+    }
+  }
+
+
+
+  /* BACKGROUND ANIMATION */
+  
+
+  .ship{
+      top: -100%;
+      z-index: 4;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-image:url(img/spaceship.png);
+      background-size: cover;
+      background-repeat: no-repeat; 
+      transform: rotate(90deg);
+      animation: ship-movement 6.3s linear;
+  }
+
+ 
+
+
+
+  @keyframes ship-movement {
+    0% {
+     left: 0;
+     top: 300px;
+     transform: rotate(100deg);
+    }
+
+    50%{
+        top: 500px;
+        transform: rotate(90deg);
+    }
+
+    70%{
+        top: 500px;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        top: 300px;
+        transform: rotate(80deg);
+        left: 97%;
+    }
+  }
+
+  .deathstar{
+    position: absolute;
+    top: -100%;
+    left: 90%;
+    width: 100px;
+    height: 100px;
+    background-image:url(img/icons8-death-star-100.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: deathstar-boom 7s linear ;
+    
+}
+
+.explosion{
+    
+    position: absolute;
+    top: -100%;
+    left: 90%;
+    width: 100px;
+    height: 100px;
+    background-image:url(img/explosion.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: explosion 2s linear ;
+    animation-delay: 5.8s;
+}
+
+  @keyframes explosion {
+    0% {
+        top: 36.25rem;
+    left: 90%;
+   opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        top: 36.25rem;
+        left: 90%;
+    }
+  }
+
+  @keyframes deathstar-boom {
+    0% {
+        top: 36.25rem;
+    left: 90%;
+   opacity: 1;
+    }
+
+    90%{
+     opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 36.25rem;
+        left: 90%;
+    }
+  }
+  
+
+
+
+  .laser{
+      top: -100%;
+      left: 30%;
+      border-radius: 50%;
+      z-index: 2;
+      position: absolute;
+    width: 0.7rem;
+    height: 0.5rem;
+    background-color: green;
+    animation: laser-shoot 1.5s linear;
+    animation-delay: 4.35s;
+}
+
+
+@keyframes laser-shoot {
+    0% {
+        left: 70%;
+        top: 550px;
+        transform: rotate(180deg);
+       }
+       100% {
+        top: 620px;
+           transform: rotate(200deg);
+           left: 90%;
+       }
+  }
+
+
+
+
+  /* LIGHTS ANIMATION SECTION */
+
+
+
+  .citylights {
+      position: absolute;
+      top: 0;
+    width: 55%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .lights {
+    position: relative;
+    top: 25%;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation-name: lights;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  .lights2 {
+    position: relative;
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation-name: lights2;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  .lights3 {
+    position: relative;
+    opacity: 0.3;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation-name: lights3;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+
+  .light4 {
+    top: 0%;
+    animation-delay: 3s;
+    }
+
+  .light5 {
+   left: 90%;
+   top: 40%;
+   width: 25px;
+    height: 25px;
+  }
+  
+  .light6{
+    width: 23px;
+    height: 23px;
+    animation-delay: 5s;
+  }
+
+  @keyframes lights3 {
+    0% {opacity: 0.5;
+    background-color: rgb(198, 198, 211);
+   
+  }
+   100% { opacity: 0.4;
+   background-color: rgb(120, 170, 170);
+   box-shadow: 0 0 30px white;
+  }
+  }
+  
+  @keyframes lights2 {
+    0% {opacity: 0.5;
+    background-color: rgb(138, 139, 138);
+    bottom: 0;
+  }
+  30% {opacity: 0;
+  bottom: 30px;
+  }
+   50% {opacity: 0.3;
+  bottom: 0px;
+   background-color: rgb(140, 143, 118);
+  }
+  70% {
+    opacity: 0;
+  }
+  90% {bottom: 20px;}
+   100% { opacity: 0.4;
+     bottom: 0px;
+   background-color: rgb(105, 104, 101);
+   box-shadow: 0 0 30px PINK;
+  }
+  }
+
+  
+  @keyframes lights {
+    0% {opacity: 0.5;
+    background-color: rgb(173, 162, 173);
+  }
+  30% {opacity: 0;
+  }
+   50% {opacity: 0.1;
+   background-color: white;
+  }
+  70% {
+    opacity: 0;
+  }
+   100% { opacity: 0.4;
+   background-color: yellow;
+   box-shadow: 0 0 30px pink;
+  }
+  }
+  
